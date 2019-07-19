@@ -457,7 +457,7 @@
 
         self.saveAccountErrorAlert = [[BTDropInErrorAlert alloc] initWithCancel:^{
             // Use the paymentMethods setter to update state
-            [self setPaymentMethods:_paymentMethods];
+            [self setPaymentMethods:self->_paymentMethods];
             self.saveAccountErrorAlert = nil;
         } retry:nil];
         self.saveAccountErrorAlert.title = savePaymentMethodErrorAlertTitle;
@@ -465,7 +465,7 @@
     } else {
         self.saveAccountErrorAlert = [[BTDropInErrorAlert alloc] initWithCancel:^{
             // Use the paymentMethods setter to update state
-            [self setPaymentMethods:_paymentMethods];
+            [self setPaymentMethods:self->_paymentMethods];
             self.saveAccountErrorAlert = nil;
         } retry:nil];
         self.saveAccountErrorAlert.title = savePaymentMethodErrorAlertTitle;
