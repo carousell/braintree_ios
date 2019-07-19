@@ -208,7 +208,7 @@ typedef void (^BTClientFailureBlock)(NSError *error);
                 postalCode:(nullable NSString *)postalCode
                   validate:(BOOL)shouldValidate
                    success:(nullable BTClientCardSuccessBlock)successBlock
-                   failure:(nullable BTClientFailureBlock)failureBlock DEPRECATED_MSG_ATTRIBUTE("Please use BTClientCardRequest and saveCardWithRequest:validate:success:failure:");
+                   failure:(nullable BTClientFailureBlock)failureBlock;
 
 @end
 
